@@ -1,0 +1,14 @@
+$backgroundImage: url('../images/background-image.jpg');
+@use 'header';
+
+@use 'body';
+html {
+    background-image: $backgroundImage;
+    height: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+

@@ -1,0 +1,34 @@
+@use "sass:math";
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+}
+
+.material-symbols-outlined {
+    display: flex;
+    color: aliceblue;
+    font-size: 80px !important;
+}
+
+.header {
+    @include flex();
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 100px 0 130px;
+    button {
+        border: 0ch;
+        background-color: transparent;
+        border-radius: 25px;
+        padding: 10px 15px;
+        color: aliceblue;
+        font-size: 22px;
+    }
+}
+
+.buttons {
+    margin-left: auto;
+    margin-right: math.div(100%, 7);
+    @include flex();
+    gap: 50px;
+}
